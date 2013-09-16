@@ -8,4 +8,5 @@ http://cugbteam.org/admin/new
 
 另外，玉贤和嘉琪看看里面的文字有什么问题，另外有几处没有的请帮忙补上。
 
+小改就在 issue 里头说，大改请 Fork。
 
