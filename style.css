@@ -1,0 +1,39 @@
+html, body, ul {margin:0;padding:0;}
+ul, li {list-style-type:none;}
+html{background:url('image/background.jpg');}
+body {width:1000px;margin:0 auto;font-family:Microsoft Yahei, Microsoft Jhenghei, Arial, Helvetica, sans-serif;color:#FFF;}
+#head, #menu a {color:#FFF;text-decoration:none;}
+#head h2 {font-family:Microsoft Yahei, Microsoft Jhenghei, Arial, Helvetica, sans-serif;}
+#head h3 {font-family:"Courier New", Courier, monospace;}
+#menu {height:50px;background:#3f67c0;}
+#menu li {float:left;line-height:50px;}
+#menu a {font-size:16px;padding:14px 20px;background-color:#3f67c0;border-left:1px solid #5279c9;border-right:1px solid #5279c9;}
+#menu li.last a {border-right:2px solid #5279c9;}
+#menu a:hover {background-color:#35b5eb;cursor:pointer;}
+#menu li#menu_icon {padding:16px 10px;border-right:1px solid #5279c9;cursor:pointer;}
+#menu li#menu_icon i {display:block;background:url('image/menu_icon.png');height:17px;width:22px;}
+#main {margin-top:20px;}
+#sidebar {width:30%;float:left;}
+#sidebar section {padding:5px 20px 20px 20px;background:#0e112a;margin-bottom:20px;}
+section {color:#cfd0d9;}
+section h3, #content .title {color:#FFF;padding-bottom:15px;border-bottom:1px solid #FFF;font-weight:bold;}
+section a,#content a, section a:visited, #content a:visited, footer a, footer a:visited {color:#06c;}
+section a:hover, #content a:hover, footer a:hover {color:#09f;}
+section ul {padding:0;margin:0;}
+section ul li {list-style-type:none;padding:10px 20px;margin:2px 0;}
+section ul li:hover {background:#22284f;cursor:pointer;}
+section ul a, section ul a:visited {text-decoration:none;color:#cfd0d9;}
+section img {float:left;}
+.red {border-left:4px solid #eb5b4c;}
+.yellow {border-left:4px solid #f2c13f;}
+.blue {border-left:4px solid #35b5eb;}
+.green {border-left:4px solid #0acf67;}
+#content {background:#0e112a;width: 62%;float: right;padding:20px 3%;min-height:800px;}
+#content .title {text-align:right;padding-bottom:22px;}
+.left {float:left;margin: 20px 0;}
+.right {float:right;margin: 20px 0;}
+article {padding: 10px 20px;margin: 10px 0;}
+article:hover {cursor:pointer;background:#22284f;}
+article .content {margin-left:60px;}
+#sidebar.fixed {position:fixed;top:0;width:24%;}
+footer {width:1000px;margin:20px auto 0;text-align:center;}
