@@ -48,12 +48,13 @@
 			</section>
 			<section>
 				<h3>STATISTICS</h3>
-				<p style="height:56px;">
-				<img src="http://cugbteam.org/website/img/1.gif">
-				<img src="http://cugbteam.org/website/img/4.gif">
-				<img src="http://cugbteam.org/website/img/7.gif">
-				<img src="http://cugbteam.org/website/img/0.gif">
+				<p style="height:56px;" id="counter">
 				</p>
+				<script type="text/javascript" src="http://cugbteam.org/website/img/count.php"></script>
+	            <script type="text/javascript">
+	            	var d = 'http://cugbteam.org/website/img/', n = count.history.visitors.toString().split('');
+	            	for(var i in n) document.getElementById('counter').innerHTML = document.getElementById('counter').innerHTML + '<img src="'+d+n[i]+'.gif" />';
+	            </script>
 			</section>
 		</div>
 		<div id="content">

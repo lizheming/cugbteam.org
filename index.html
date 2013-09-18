@@ -48,161 +48,27 @@
 			</section>
 			<section>
 				<h3>STATISTICS</h3>
-				<p style="height:56px;">
-				<img src="http://cugbteam.org/website/img/1.gif">
-				<img src="http://cugbteam.org/website/img/4.gif">
-				<img src="http://cugbteam.org/website/img/7.gif">
-				<img src="http://cugbteam.org/website/img/0.gif">
+				<p style="height:56px;" id="counter">
 				</p>
+				<script type="text/javascript" src="http://cugbteam.org/website/img/count.php"></script>
+	            <script type="text/javascript">
+	            	var d = 'http://cugbteam.org/website/img/', n = count.history.visitors.toString().split('');
+	            	for(var i in n) document.getElementById('counter').innerHTML = document.getElementById('counter').innerHTML + '<img src="'+d+n[i]+'.gif" />';
+	            </script>
 			</section>
 		</div>
 		<div id="content">
 			<div class="title">All OS/Software We Support</div>
-			<article class="odd">
-                <img src="http://cugbteam.org/website/img/apache.png" alt="Apache" class="left">
-                <div class="content">
-	                <h3>Apache</h3>
-	                <ul class="large">
-	                    <li><a href="http://cugbteam.org/apache/">apache</a>: Apache 及各版本软件下载</li>
-	                </ul>
-	            </div>
-            </article>
-			<article class="odd">
-                <img src="http://cugbteam.org/website/img/archlinux.png" alt="Arch Linux" class="left">
-                <div class="content">
-	                <h3>Arch Linux</h3>
-	                <ul class="large">
-	                    <li><a href="http://cugbteam.org/archlinux/">archlinux</a>: 下载 Arch Linux 安装盘并更新软件包</li>
-	                </ul>
-	            </div>
-            </article>
-			<article class="even">
-                <img src="http://cugbteam.org/website/img/centos.png" alt="CentOS" class="left">
-                <div class="content">
-	                <h3>CentOS</h3>
-	                <ul class="large">
-	                    <li><a href="http://cugbteam.org/centos/">centos</a>: 下载 CentOS 安装光盘并更新软件包</li>
-	                </ul>
-	            </div>
-            </article>
-			<article class="even">
-                <img src="http://cugbteam.org/website/img/CPAN.png" alt="CPAN" class="left">
-                <div class="content">
-	                <h3>CPAN</h3>
-	                <ul class="large">
-	                    <li><a href="http://cugbteam.org/cpan/">cpan</a>: 下载 Perl 的各种相关文件，同时是 Perl 模块库的更新源</li>
-	                </ul>
-	            </div>
-            </article>
-			<article class="even">
-                <img src="http://cugbteam.org/website/img/CRAN.png" alt="CRAN" class="left">
-                <div class="content">
-	                <h3>CRAN</h3>
-	                <ul class="large">
-	                    <li><a href="http://cugbteam.org/cran/">cran</a>: 下载 R 语言的可执行文件、源代码和说明文件，收录了各种用户撰写的软件包</li>
-	                </ul>
-	            </div>
-            </article>
-			<article class="even">
-                <img src="http://cugbteam.org/website/img/CTAN.png" alt="CTAN" class="left">
-                <div class="content">
-	                <h3>CTAN</h3>
-	                <ul class="large">
-	                    <li><a href="http://cugbteam.org/ctan/">cpan</a>: Tex 语言更新源</li>
-	                </ul>
-	            </div>
-            </article>
-			<article class="odd">
-                <img src="http://cugbteam.org/website/img/debian.png" alt="Debian" class="left">
-                <div class="content">
-	                <h3>Debian</h3>
-	                <ul class="large">
-	                    <li><a href="http://cugbteam.org/debian-backports/">debian-backports</a>: Debian 旧版本软件更新源</li>
-	                    <li><a href="http://cugbteam.org/debian-cd/">debian-cd</a>: 下载 Debian 安装光盘 CDROM 版</li>
-	                    <li><a href="http://cugbteam.org/debian-multimedia/">debian-multimedia</a>: Debian 多媒体软件更新源</li>
-	                    <li><a href="http://cugbteam.org/debian-security/">debian-security</a>: Debian 安全软件更新源</li>
-	                </ul>
-	            </div>
-            </article>
-			<article class="odd">
-                <img src="http://cugbteam.org/website/img/deepin.png" alt="Deepin" class="left">
-                <div class="content">
-	                <h3>Deepin</h3>
-	                <ul class="large">
-	                    <li><a href="http://cugbteam.org/deepin/">deepin</a>: Deepin 更新源</li>
-	                    <li><a href="http://cugbteam.org/deepin-cd/">deepin-cd</a>: 下载 Deepin 安装光盘</li>
-	                </ul>
-	            </div>
-            </article>
-			<article class="odd">
-                <img src="http://cugbteam.org/website/img/fedora.png" alt="Fedora" class="left">
-                <div class="content">
-	                <h3>Fedora</h3>
-	                <ul class="large">
-	                    <li><a href="http://cugbteam.org/fedora">fedora</a>: 下载最新版 Fedora Linux 及其更新</li>
-	                    <li><a href="http://cugbteam.org/epel">epel</a>: 为 RHEL/CentOS/Fedora 安装额外的软件包</li>
-	                    <li><a href="http://cugbteam.org/rpmfusion">rpmfusion</a>: 为 RHEL/CentOS/Fedora 安装额外的软件包</li>
-	                </ul>
-	            </div>
-            </article>
-			<article class="odd">
-                <img src="http://cugbteam.org/website/img/gentoo.png" alt="Gentoo" class="left">
-                <div class="content">
-	                <h3>Gentoo</h3>
-	                <ul class="large">
-	                    <li><a href="http://cugbteam.org/gentoo">gentoo</a>: Gentoo 源代码</li>
-	                    <li><a href="http://cugbteam.org/gentoo-portage">gentoo-portage</a>: Gentoo 软件包定义文件</li>
-	                </ul>
-	            </div>
-            </article>
-			<article class="odd">
-                <img src="http://cugbteam.org/website/img/gnu.png" alt="GNU" class="left">
-                <div class="content">
-	                <h3>GNU</h3>
-	                <ul class="large">
-	                    <li><a href="http://cugbteam.org/gnu">gnu</a>: GNU 软件更新源</li>
-	                </ul>
-	            </div>
-            </article>
-			<article class="odd">
-                <img src="http://cugbteam.org/website/img/kernel.png" alt="Kernel" class="left">
-                <div class="content">
-	                <h3>Kernel</h3>
-	                <ul class="large">
-	                    <li><a href="http://cugbteam.org/kernel">kernel</a>: Kernel 内核下载</li>
-	                </ul>
-	            </div>
-            </article>
-			<article class="odd">
-                <img src="http://cugbteam.org/website/img/linuxmint.png" alt="Linux Mint" class="left">
-                <div class="content">
-	                <h3>Linux Mint</h3>
-	                <ul class="large">
-	                    <li><a href="http://cugbteam.org/linuxmint">linuxmint</a>: Linux Mint 软件包更新源</li>
-	                    <li><a href="http://cugbteam.org/linuxmint-cd">linuxmint-cd</a>: 下载 Linux Mint 安装盘</li>
-	                </ul>
-	            </div>
-            </article>
-			<article class="odd">
-                <img src="http://cugbteam.org/website/img/scientific.png" alt="Scientific" class="left">
-                <div class="content">
-	                <h3>Scientific</h3>
-	                <ul class="large">
-	                    <li><a href="http://cugbteam.org/scientific">scientific</a>: 下载 Scientific 安装盘及软件包更新源</li>
-	                </ul>
-	            </div>
-            </article>
-			<article class="odd">
-                <img src="http://cugbteam.org/website/img/ubuntu.png" alt="Ubuntu" class="left">
-                <div class="content">
-	                <h3>Ubuntu</h3>
-	                <ul class="large">
-	                    <li><a href="http://cugbteam.org/ubuntu">ubuntu</a>: Ubuntu 更新源</li>
-	                    <li><a href="http://cugbteam.org/ubuntu-releases">ubuntu-releases</a>: 下载 Ubuntu 安装光盘 CDROM 版</li>
-	                </ul>
-	            </div>
-            </article>
 		</div>
+		<script type="text/javascript" src="http://cugbteam.org/website/in-admin/api.php"></script>
+		<script type="text/javascript">
+			for(var i in os) {
+				var li = '';
+				for(var j in os[i]) li += '<li><a href="http://cugbteam.org/'+os[i][j].osname+'">'+os[i][j].osname+'</a>: '+os[i][j].description+'</li>';
+				var article = '<article class="odd"><img src="http://cugbteam.org/website/img/'+os[i][0].system+'.png" alt="'+i+'" class="left"><div class="content"><h3>'+i+'</h3><ul class="large">'+li+'</ul></div></article>';
+				document.getElementById('content').innerHTML += article;
+			}
+		</script>
 	</div>
 	<div style="clear:both;"></div>
 	<footer>

@@ -48,12 +48,13 @@
 			</section>
 			<section>
 				<h3>STATISTICS</h3>
-				<p style="height:56px;">
-				<img src="http://cugbteam.org/website/img/1.gif">
-				<img src="http://cugbteam.org/website/img/4.gif">
-				<img src="http://cugbteam.org/website/img/7.gif">
-				<img src="http://cugbteam.org/website/img/0.gif">
+				<p style="height:56px;" id="counter">
 				</p>
+				<script type="text/javascript" src="http://cugbteam.org/website/img/count.php"></script>
+	            <script type="text/javascript">
+	            	var d = 'http://cugbteam.org/website/img/', n = count.history.visitors.toString().split('');
+	            	for(var i in n) document.getElementById('counter').innerHTML = document.getElementById('counter').innerHTML + '<img src="'+d+n[i]+'.gif" />';
+	            </script>
 			</section>
 		</div>
 		<div id="content">
@@ -63,7 +64,7 @@
 				<p>目前负责维护镜像站的人员主要有：
 					<ol>
 						<li>玉贤: <a href="mailto:cugosms@gmail.com" target="_blank">cugosms@gmail.com</a></li>
-						<li>嘉琪: <a href="mailto:zjqzxc@163.com" target="_blank">zjqzxc@163.com</a></li>
+						<li>嘉琦: <a href="mailto:zjqzxc@163.com" target="_blank">zjqzxc@163.com</a></li>
 					</ol>
 				</p>
 

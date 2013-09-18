@@ -15,7 +15,8 @@ body {width:1000px;margin:0 auto;font-family:Microsoft Yahei, Microsoft Jhenghei
 #main {margin-top:20px;}
 #sidebar {width:30%;float:left;}
 #sidebar section {padding:5px 20px 20px 20px;background:#0e112a;margin-bottom:20px;}
-section {color:#cfd0d9;}
+section,article {color:#cfd0d9;}
+article h3 {color:#FFF;}
 section h3, #content .title {color:#FFF;padding-bottom:15px;border-bottom:1px solid #FFF;font-weight:bold;}
 section a,#content a, section a:visited, #content a:visited, footer a, footer a:visited {color:#06c;}
 section a:hover, #content a:hover, footer a:hover {color:#09f;}
