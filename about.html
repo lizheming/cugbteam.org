@@ -75,6 +75,70 @@
 		</div>
 	</div>
 	<div style="clear:both;"></div>
+	<div id="talkbox">
+		<div class="panel">
+			<span>Welcome To HiTalk</span>
+			<div class="button">
+				<div class="extension">
+					<div class="box"></div>
+				</div>
+				<div class="display">
+					<div class="box">
+						<div class="d1"></div>
+						<div class="d2"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<iframe src="http://cugbteam.org/admin/talk" scrolling="no" frameborder="0" width="300px" height="400px" id="hitalk" style="display:none;"></iframe>
+	</div>
+	<style type="text/css">
+		#talkbox {width:300px;position:fixed;right:0;bottom:0;background:#0e112a;}
+		#talkbox .panel {padding:8px 10px;}
+		#talkbox span {float:left;}
+		#talkbox .button {float:right;}
+		#talkbox .extension, #talkbox .display {padding:5px;cursor:pointer;display:inline-block;width:15px;height:15px;}
+		#talkbox .extension .box {border:1px solid #FFF;width:10px;}
+		#talkbox .display .box .d1, #talkbox .display .box .d2 {border:1px solid #FFF;-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);-o-transform: rotate(45deg);transform: rotate(45deg);}
+		#talkbox .display .box .d2 {-webkit-transform: rotate(-45deg);-moz-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg);margin-top:-2px;}
+	</style>
+	<script type="text/javascript">
+		$.each = function (array, callback) {
+			var length = array.length, count = 0;
+			for(var i in array) {
+				if(count == length) break;
+				callback(i, array[i]);
+				count++;
+			}
+		}
+		function $(tag, obj) {
+			array = new Array();
+			if(obj == null) obj = new Array(document);
+			if(obj.constructor != Array) obj = new Array(obj);
+			for(var i in obj) {
+				var tags = tag.split(' '), tagfirst = tags.shift();
+				switch(tagfirst.substr(0,1)) {
+					case '#':	
+						var Obj = new Array(document.getElementById(tagfirst.substr(1)));
+					break;
+					case '.':	
+						var Obj = obj[i].getElementsByClassName(tagfirst.substr(1));
+					break;
+					default:	
+						var Obj = obj[i].getElementsByTagName(tagfirst);
+					break;
+				}
+				if(tags.length != 0) $(tags.join(' '), Obj);
+				else $.each(Obj, function(i, item) {array.push(item);}); 
+			}
+			return array;
+		}
+		$('.extension')[0].onclick = function() {
+			if($('#hitalk')[0].style.display == 'block') $('#hitalk')[0].style.display = 'none';
+			else $('#hitalk')[0].style.display = 'block';
+		}
+		$('#talkbox .display')[0].onclick = function() {$('#talkbox')[0].style.display = 'none';}
+	</script>
 	<footer>
 		COPY RIGHT BY <a href="http://zh.eming.li" title="怡红公子">AUSTIN</a>.
 	</footer>
